@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xl23c4fkTF8=",
+  "success": true,
+  "projectFilePath": "/Users/marcodomenico/Downloads/DesignPattern/DesignPattern/DesignPattern.csproj",
+  "expectedPackageFiles": [
+    "/Users/marcodomenico/.nuget/packages/microsoft.netcore.app.ref/8.0.20/microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "/Users/marcodomenico/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "/Users/marcodomenico/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.20/microsoft.netcore.app.host.osx-arm64.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
