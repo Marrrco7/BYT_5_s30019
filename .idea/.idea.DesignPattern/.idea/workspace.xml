@@ -8,14 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="215d7d70-32ba-4208-91da-63e02efc3feb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Adapter/BillingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Adapter/BillingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Adapter/EmployeeAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Adapter/EmployeeAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Factory/DatabaseFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Factory/DatabaseFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Factory/OracleDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Factory/OracleDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Factory/SqlServerDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Factory/SqlServerDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Observer/Observer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Observer/Observer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Observer/Subject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Observer/Subject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountCalculator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountStrategyResolver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/IDiscountStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/LoyalCustomerDiscount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/Order.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/RegularCustomerDiscount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/VipCustomerDiscount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignPattern/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignPattern/Strategy/Shipping/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Shipping/Order.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +45,26 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/CompressionContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountStrategyResolver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/IDiscountStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/LoyalCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/RegularCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/VipCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/ICompressionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/RarCompressionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/SevenZipCompressionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/DomesticShipping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/IShippingCostStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/InternationalShipping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/ShippingCostCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Shipping/ShippingStrategyResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/StrategyDemo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/ZipCompressionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -111,12 +127,23 @@
       <workItem from="1764666756346" duration="10167000" />
       <workItem from="1767345278934" duration="704000" />
       <workItem from="1767346028969" duration="604000" />
+      <workItem from="1771001335897" duration="3482000" />
     </task>
+    <task id="LOCAL-00001" summary="strategy pattern">
+      <option name="closed" value="true" />
+      <created>1771003123099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771003123100</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -131,6 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="strategy pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="strategy pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

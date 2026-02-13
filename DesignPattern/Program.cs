@@ -4,7 +4,9 @@ using DesignPattern.Adapter;
 using DesignPattern.Factory;
 using DesignPattern.Observer;
 using DesignPattern.Strategy;
+using DesignPattern.Strategy.Discount;
 using DesignPattern.Strategy.Shipping;
+using Order = DesignPattern.Strategy.Shipping.Order;
 
 namespace DesignPattern;
 class Program
@@ -99,6 +101,4 @@ class Program
                 $"Country={order.Country}, Shipping={calculator.Calculate(order)}");
         }
     }
-    
-
 }
