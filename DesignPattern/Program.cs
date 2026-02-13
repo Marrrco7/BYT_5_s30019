@@ -4,6 +4,7 @@ using DesignPattern.Adapter;
 using DesignPattern.Factory;
 using DesignPattern.Observer;
 using DesignPattern.Strategy;
+using DesignPattern.Strategy.Shipping;
 
 namespace DesignPattern;
 class Program
@@ -18,6 +19,9 @@ class Program
         Console.WriteLine();
         observingThings();
         StrategyDemo.run();
+        Thread.Sleep(2000);
+        Console.WriteLine();
+        OrdersDemo();
     }
 
     // No need to replace this code, it should work after implementing proper factory design pattern
@@ -73,6 +77,27 @@ class Program
         Thread.Sleep(1000);
         RedMI.SetAvailability("Available");
 
+    }
+
+    static void OrdersDemo()
+    {
+        var resolver = new ShippingStrategyResolver(new IShippingCostStrategy[]
+        {
+            new DomesticShipping(),
+            new InternationalShipping()
+        });
+
+        var order1 = new Order(Subtotal: 120m, WeightKg: 3.2m, Country: "PL");
+        var order2 = new Order(Subtotal: 120m, WeightKg: 3.2m, Country: "DE");
+
+        foreach (var order in new[] { order1, order2 })
+        {
+            var strategy = resolver.Resolve(order);
+            var calculator = new ShippingCostCalculator(strategy);
+
+            Console.WriteLine(
+                $"Country={order.Country}, Shipping={calculator.Calculate(order)}");
+        }
     }
     
 
