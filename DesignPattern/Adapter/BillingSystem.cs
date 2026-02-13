@@ -1,4 +1,7 @@
-﻿namespace DesignPattern.Adapter
+﻿using System;
+using System.Collections.Generic;
+
+namespace DesignPattern.Adapter
 {
     public class BillingSystem
     {

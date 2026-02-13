@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace DesignPattern.Factory
 {
     public class SqlServerDatabase : IDatabase

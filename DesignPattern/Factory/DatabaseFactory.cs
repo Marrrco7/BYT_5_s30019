@@ -1,4 +1,6 @@
-﻿namespace DesignPattern.Factory
+﻿using System;
+
+namespace DesignPattern.Factory
 {
     public static class DatabaseFactory
     {

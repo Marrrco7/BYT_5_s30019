@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Collections.Generic;
+
 namespace DesignPattern.Observer
 {
     // The ConcreteSubject class
@@ -11,10 +14,7 @@ namespace DesignPattern.Observer
         private int ProductPrice { get; set; } = productPrice;
         private string Availability { get; set; } = availability;
 
-        public string GetAvailability()
-        {
-            return Availability;
-        }
+        public string GetAvailability() => Availability;
 
         public void SetAvailability(string availability)
         {

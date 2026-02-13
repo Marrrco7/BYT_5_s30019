@@ -1,5 +1,7 @@
 ﻿// In case you need some guidance: https://refactoring.guru/design-patterns/observer
 
+using System;
+
 namespace DesignPattern.Observer
 {
     public class ConcreteObserver(string userName) : IObserver
@@ -15,10 +17,10 @@ namespace DesignPattern.Observer
         public void RemoveSubscriber(ISubject subject)
         {
             subject.RemoveObserver(this);
-
+        
             if (subject == _subject) _subject = null;
         }
-
+        
         public void Update(string availability)
         {
             Console.WriteLine("Product availability changed to " + availability + " for user " + UserName);

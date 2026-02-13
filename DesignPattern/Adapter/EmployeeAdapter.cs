@@ -1,4 +1,7 @@
 ﻿// In case you need some guidance: https://refactoring.guru/design-patterns/adapter
+
+using System.Collections.Generic;
+
 namespace DesignPattern.Adapter
 {
     public class EmployeeAdapter : ITarget

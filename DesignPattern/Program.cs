@@ -1,7 +1,10 @@
-﻿using DesignPattern.Adapter;
+﻿using System;
+using System.Threading;
+using DesignPattern.Adapter;
 using DesignPattern.Factory;
 using DesignPattern.Observer;
- 
+using DesignPattern.Strategy;
+
 namespace DesignPattern;
 class Program
 {
@@ -14,6 +17,7 @@ class Program
         Thread.Sleep(2000);
         Console.WriteLine();
         observingThings();
+        StrategyDemo.run();
     }
 
     // No need to replace this code, it should work after implementing proper factory design pattern
@@ -68,6 +72,8 @@ class Program
 
         Thread.Sleep(1000);
         RedMI.SetAvailability("Available");
+
     }
+    
 
 }
