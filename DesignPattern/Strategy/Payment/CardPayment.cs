@@ -1,4 +1,6 @@
-namespace DesignPattern.Strategy.Discount.Payment;
+using DesignPattern.Strategy.Discount.Payment;
+
+namespace DesignPattern.Strategy.Payment;
 
 public class CardPayment : IPaymentStrategy
 {

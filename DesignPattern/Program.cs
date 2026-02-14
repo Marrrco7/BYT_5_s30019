@@ -6,6 +6,7 @@ using DesignPattern.Observer;
 using DesignPattern.Strategy;
 using DesignPattern.Strategy.Discount;
 using DesignPattern.Strategy.Discount.Payment;
+using DesignPattern.Strategy.Payment;
 using DesignPattern.Strategy.Shipping;
 using Order = DesignPattern.Strategy.Shipping.Order;
 
