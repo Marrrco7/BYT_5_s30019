@@ -8,7 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="215d7d70-32ba-4208-91da-63e02efc3feb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/PaymentCalculatorResolver.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,12 @@
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/IDiscountStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/LoyalCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/CardPayment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/CashPayment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/IPaymentStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/Order.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/PaymentCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/Payment/PaymentCalculatorResolver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/RegularCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/Discount/VipCustomerDiscount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DesignPattern/Strategy/ICompressionStrategy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -119,7 +125,7 @@
       <workItem from="1767345278934" duration="704000" />
       <workItem from="1767346028969" duration="604000" />
       <workItem from="1771001335897" duration="3846000" />
-      <workItem from="1771061756354" duration="853000" />
+      <workItem from="1771061756354" duration="1526000" />
     </task>
     <task id="LOCAL-00001" summary="strategy pattern">
       <option name="closed" value="true" />
