@@ -3,6 +3,7 @@ using System.Threading;
 using DesignPattern.Adapter;
 using DesignPattern.Factory;
 using DesignPattern.Observer;
+using DesignPattern.Observer.Sensors;
 using DesignPattern.Strategy;
 using DesignPattern.Strategy.Discount;
 using DesignPattern.Strategy.Discount.Payment;
@@ -11,7 +12,8 @@ using DesignPattern.Strategy.Shipping;
 using Order = DesignPattern.Strategy.Shipping.Order;
 
 namespace DesignPattern;
-class Program
+
+internal static class Program
 {
     static void Main(string[] args)
     {
@@ -26,6 +28,8 @@ class Program
         Thread.Sleep(2000);
         Console.WriteLine();
         OrdersDemo();
+        Thread.Sleep(2000);
+        TemperatureObserverDemo();
     }
 
     // No need to replace this code, it should work after implementing proper factory design pattern
@@ -102,5 +106,18 @@ class Program
             Console.WriteLine(
                 $"Country={order.Country}, Shipping={calculator.Calculate(order)}");
         }
+    }
+
+    static void TemperatureObserverDemo()
+    {
+        var sensor = new TemperatureSensor();
+        var s1 = sensor.Subscribe(new ConsoleObserver("A"));
+        var s2 = sensor.Subscribe(new ConsoleObserver("B"));
+        
+        sensor.SetTemperature(21);
+        
+        s2.Dispose();
+        sensor.SetTemperature(30);
+        sensor.Complete();
     }
 }
