@@ -8,16 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="215d7d70-32ba-4208-91da-63e02efc3feb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountCalculator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/DiscountStrategyResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/IDiscountStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/LoyalCustomerDiscount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/RegularCustomerDiscount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Discount/VipCustomerDiscount.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesignPattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPattern/Strategy/Shipping/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPattern/Strategy/Shipping/Order.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +66,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Project.DesignPattern.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.DesignPattern.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -127,7 +118,8 @@
       <workItem from="1764666756346" duration="10167000" />
       <workItem from="1767345278934" duration="704000" />
       <workItem from="1767346028969" duration="604000" />
-      <workItem from="1771001335897" duration="3482000" />
+      <workItem from="1771001335897" duration="3846000" />
+      <workItem from="1771061756354" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="strategy pattern">
       <option name="closed" value="true" />
@@ -137,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771003123100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="discount strategy">
+      <option name="closed" value="true" />
+      <created>1771004848283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771004848283</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +159,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="strategy pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="strategy pattern" />
+    <MESSAGE value="discount strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="discount strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
